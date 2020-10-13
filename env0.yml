@@ -1,1 +1,8 @@
+version: 1
 
+deploy:
+  steps:
+    terraformApply:
+      after:
+        - |
+            pip install pyvmomi
